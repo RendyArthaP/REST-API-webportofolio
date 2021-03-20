@@ -23,3 +23,5 @@ let portofolio = [{
     livePortofolio: ""
   }
 ]
+
+module.exports = portofolio
