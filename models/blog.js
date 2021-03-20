@@ -23,3 +23,5 @@ let blog = [{
     liveBlog: ""
   },
 ]
+
+module.exports = blog
