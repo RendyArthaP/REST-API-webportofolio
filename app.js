@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const localPort = PORT || 3000
+// const localPort = PORT || 3000
 const { PORT } = require('./config')
 const routes = require('./routes')
 const cors = require('cors')
