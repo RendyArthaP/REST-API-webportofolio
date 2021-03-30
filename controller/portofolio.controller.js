@@ -16,7 +16,7 @@ module.exports = {
 
   getPortofolioByID: async (req, res) => {
     const ids = req.params.id
-    const porto = await portofolio.findOne(ids)
+    const porto = await portofolio.findById(ids)
 
     try {
       if (!porto) {
@@ -32,8 +32,6 @@ module.exports = {
     } catch(error) {
       console.log(error)
     }
-
-    
   },
   
   addPortofolio: async (req, res) => {

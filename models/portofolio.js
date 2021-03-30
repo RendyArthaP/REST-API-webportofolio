@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 const PortofolioSchema = new mongoose.Schema({
   imagePortofolio: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "imageportofolio"
+    type: String,
+    require: true
   },
   titlePortofolio: {
     type: String,
@@ -16,10 +16,6 @@ const PortofolioSchema = new mongoose.Schema({
     type: String,
     require: true
   },
-  linkGithub: {
-    type: String,
-    require:true
-  }
 })
 
 const Portofolio = mongoose.model("portofolio", PortofolioSchema)
